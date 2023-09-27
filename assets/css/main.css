@@ -798,6 +798,16 @@ button,
   #header {
     margin: 0 0 1em 0; } }
 
+    /* textbox */
+    #email {
+      background-color: #000;
+    }
+
+    /* image */
+    #imageAPOD {
+      height: 350px;
+    }
+
 /* Signup Form */
 #signup-form {
   display: -moz-flex;

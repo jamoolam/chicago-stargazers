@@ -166,4 +166,22 @@
 
 		})();
 
+		document.querySelector('#submitButton').addEventListener('click', getAPOD)
+
+		function getAPOD() {
+    		let apod = document.querySelector('#email').value
+    		fetch(`https://api.nasa.gov/planetary/apod?api_key=CJ3tQJshexQdOTwJhLCc1pjKbtMEb2gyOe4Coto2&date=${apod}
+			`)
+    			.then(res => res.json())
+    			.then(data => {
+        			console.log(data)
+					document.querySelector('img').src = data.url
+					document.querySelector('h3').innerHTML = data.copyright
+
+    			})
+    			.catch(err => {
+        			console.log(`error ${err}`)
+    		});
+		}
+
 })();
