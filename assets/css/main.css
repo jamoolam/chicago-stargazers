@@ -804,9 +804,10 @@ button,
     }
 
     /* image */
-    #imageAPOD {
+    .imageAPOD {
+      display: none;
       height: 350px;
-      width: 200px;
+      width: 350px;
     }
 
 /* Signup Form */
